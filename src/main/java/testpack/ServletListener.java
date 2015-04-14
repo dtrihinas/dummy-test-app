@@ -4,7 +4,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-//import eu.paasport.services.monitoring.agent.MonitoringAgent;
+import eu.paasport.services.monitoring.agent.MonitoringAgent;
 //import eu.paasport.services.monitoring.agent.exceptions.MonitoringException;
 
 public class ServletListener implements ServletContextListener{
