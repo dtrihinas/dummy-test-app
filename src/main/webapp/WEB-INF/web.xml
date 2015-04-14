@@ -6,6 +6,23 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          metadata-complete="false">
 
-         
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<listener>
+		<listener-class>testpack.ServletListener</listener-class>
+	</listener>
+
+	<servlet>
+    	<servlet-name>TestServlet</servlet-name>
+    	<servlet-class>testpack.TestServlet</servlet-class>
+  	</servlet>
+
+  	<servlet-mapping>
+    	<servlet-name>TestServlet</servlet-name>
+    	<url-pattern>/TestServlet</url-pattern>
+  	</servlet-mapping>        
 </web-app>
 
