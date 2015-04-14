@@ -1,5 +1,7 @@
 package testpack;
 
+import java.util.HashMap;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -13,7 +15,14 @@ public class ServletListener implements ServletContextListener{
     	ServletContext sc = event.getServletContext();  	
 
     	try {
-			MonitoringAgent agent = new MonitoringAgent();
+    		HashMap<String,String> params = new HashMap<String,String>();
+			params.put("api.key", "9876");
+			params.put("app.name", "myappopenshift");
+			params.put("agent.name", "myagent");
+			params.put("server.endpoint", "http://83.212.86.242");
+			//params.put("agent.logging", "true");
+			
+			MonitoringAgent agent = new MonitoringAgent(params);
 	    	sc.setAttribute("agent", agent);
 		} 
     	catch (MonitoringException e) {
