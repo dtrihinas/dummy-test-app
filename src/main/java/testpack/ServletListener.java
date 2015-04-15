@@ -16,8 +16,8 @@ public class ServletListener implements ServletContextListener{
 
     	try {
     		HashMap<String,String> params = new HashMap<String,String>();
-			params.put("api.key", "9876");
-			params.put("app.name", "myappopenshift1");
+			params.put("api.key", "123456789");
+			params.put("app.name", "myapp1");
 			params.put("agent.name", "myagent");
 			params.put("server.endpoint", "http://83.212.86.242");
 			//params.put("agent.logging", "true");
