@@ -16,7 +16,7 @@
 	  </init-param>
 	  <init-param>
 		<param-name>agent.name</param-name>
-		<param-value>myagent-2</param-value>
+		<param-value>myagent-1</param-value>
 	  </init-param>
 	  <init-param>
 		<param-name>server.endpoint</param-name>
