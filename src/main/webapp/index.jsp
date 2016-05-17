@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Hello</h1>
+<h1>Hello, this is an app with paasport monitoring v0.6</h1>
 </body>
 </html>

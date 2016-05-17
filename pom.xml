@@ -22,7 +22,7 @@
 		<repository>
 			<id>paasport repo</id>
 			<name>paasport repo</name>
-			<url>http://euprojects.net/nexus/content/repositories/snapshots/</url>
+			<url>http://paasportrepository.euprojects.net/nexus/content/repositories/thirdparty/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
@@ -54,11 +54,29 @@
 		<dependency>
 			<groupId>eu.paasport</groupId>
 			<artifactId>MonitoringAgent</artifactId>
-			<version>0.0.5-SNAPSHOT</version>
+			<version>0.0.6-SNAPSHOT</version>
 		</dependency>
         <!--PaaSport core dependencies:end-->	
-	</dependencies>
-        
+                        <!--PaaSport Portability Library-->     
+
+        <dependency>
+            <groupId>eu.paasport.portability</groupId>
+            <artifactId>paasport-portability-core</artifactId>
+            <version>1.1.5</version>
+        </dependency>
+        <!-- If you intend to deploy the app on Cloud Foundry, add the following -->
+        <dependency>
+            <groupId>eu.paasport.portability</groupId>
+            <artifactId>paasport-portability-cloudfoundry-connector</artifactId>
+            <version>1.1.5</version>
+        </dependency>
+        <!-- If you intend to deploy the app on OpenShift, add the following -->
+        <dependency>
+            <groupId>eu.paasport.portability</groupId>
+            <artifactId>paasport-portability-openshift-connector</artifactId>
+            <version>1.1.5</version>
+        </dependency>  
+       </dependencies>
         
         
          <!--OpenShift dependencies:start-->       
@@ -118,6 +136,6 @@
         </build>
         <!--HEROKU and CloudControl dependencies:end-->
         
-        
+             
         
 </project>
