@@ -59,23 +59,7 @@
         <!--PaaSport core dependencies:end-->	
                         <!--PaaSport Portability Library-->     
 
-        <dependency>
-            <groupId>eu.paasport.portability</groupId>
-            <artifactId>paasport-portability-core</artifactId>
-            <version>1.1.5</version>
-        </dependency>
-        <!-- If you intend to deploy the app on Cloud Foundry, add the following -->
-        <dependency>
-            <groupId>eu.paasport.portability</groupId>
-            <artifactId>paasport-portability-cloudfoundry-connector</artifactId>
-            <version>1.1.5</version>
-        </dependency>
-        <!-- If you intend to deploy the app on OpenShift, add the following -->
-        <dependency>
-            <groupId>eu.paasport.portability</groupId>
-            <artifactId>paasport-portability-openshift-connector</artifactId>
-            <version>1.1.5</version>
-        </dependency>  
+ 
        </dependencies>
         
         
