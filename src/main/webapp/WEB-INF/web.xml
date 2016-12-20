@@ -14,6 +14,10 @@
 		<param-name>app.name</param-name>
 		<param-value>myapp1</param-value>
 	  </init-param>
+          <init-param>
+		<param-name>app.id</param-name>
+		<param-value>testapp11</param-value>
+	  </init-param>
 	  <init-param>
 		<param-name>agent.name</param-name>
 		<param-value>myagent-1</param-value>
